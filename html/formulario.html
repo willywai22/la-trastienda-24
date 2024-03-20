@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" href="../estilos/estilostrastienda.css" type="text/css"/>
+    </head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form >
+            <table class="formulario">
+        
+                <tr>
+                    <td> 
+                        <label for="Nombre">Nombre </label>
+                        <input type="text" id="Nombre" name="Nombre" required>
+                    </td>
+                    <td>
+                        <label for="Apellidos">Apellidos </label>
+                        <input type="text" id="Apellidos" name="Apellidos" required>
+                    </td>
+                <tr class="formulario">
+                    <td>
+                        <label for="Nacimiento">Cumpleaños</label>
+                    </td>
+                    <td>
+                        <input type="date" min="2006-01-01">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="foto" name="foto">Sube un archivo con tu DNI</label>
+                    </td>
+                    <td>
+                        <input type="file" name="foto">
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="Contraseña">Contraseña </label>
+                        <input type="password" id="Contraseña" name="Contraseña" required maxlength="12">
+                    </td>
+                    <td>
+                        <label for="Confirmar contraseña">Confirmar contrseña </label>
+                        <input type="password" id="Confirmar contraseña" name="Confirmar contraseña"b required maxlength="12">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Email">Email</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Email" name="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefono">Numero de telefono</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" id="telefono">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Sexo">Sexo</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="Mujer" name="sexo">
+                        <label for="Mujer">Mujer</label>
+                        <input type="radio" id="Hombre" name="sexo">
+                        <label for="Hombre">Hombre</label>
+                        <input type="radio" name="sexo" id="Otro">
+                        <label for="otro">Otro</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="paises">País</label>
+                    </td>
+                    <td>
+                        <input list="listap" name="paises" id="paises">
+                        <datalist id="listap">
+                            <option value="España"></option>
+                            <option value="Francia"></option>
+                            <option value="Portugal"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="Comentarios personales">Comentarios personales</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align=center><input type="reset" id="reset" name="Resetear"></td>
+                    <td align=center><input type="submit" id="submit" name="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+        <br><a href="../index.html">Volver a la página de inicio</a>
+    </body>
+</html>
